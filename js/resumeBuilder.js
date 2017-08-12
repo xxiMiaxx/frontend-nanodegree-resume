@@ -167,3 +167,6 @@ $("#main").append(internationalizeButton);
   projects.display();
 
 $("#mapDiv").append(googleMap);
+$("#topContacts").append(HTMLcontactGeneric);
+var contMobile= HTMLmobile.replace("%data%", bio.contacts.mobile);
+$("#")
