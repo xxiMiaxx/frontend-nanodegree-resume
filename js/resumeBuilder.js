@@ -11,7 +11,7 @@ var bio = {
     "welcomeMessage": "looking forward to be working with you",
     "skills": [" programming", " html", " css", " js"],
     "biopic": "images/fry.jpg"
-}
+};
 
 
 
@@ -23,7 +23,7 @@ var work = {
         "location": "riyadh",
         "description": "all the students do, work and study, This Budget Manager job description is optimized with financial and accounting duties to help you attract qualified candidates. This template is also easy to customize and post to online job boards and careers pages"
     }]
-}
+};
 
 
 var education = {
@@ -51,7 +51,7 @@ var education = {
         "url": "www.udacity.com"
     }]
 
-}
+};
 
 var projects = {
     "projects": [{
@@ -60,7 +60,7 @@ var projects = {
         "description": "animal trading card in html, css",
         "images": ["images/fry.jpg", "images/fry.jpg"]
     }]
-}
+};
 
 bio.display = function () {
     var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
@@ -93,7 +93,7 @@ bio.display = function () {
     var formttedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     $("#topContacts").append(formttedLocation);
     $("#footerContacts").append(formttedLocation);
-}
+};
 
 bio.display();
 
@@ -114,7 +114,7 @@ work.display = function () {
 
     }
 
-}
+};
 
 work.display();
 
@@ -148,7 +148,7 @@ projects.display = function () {
             }
         }
     }
-}
+};
 
 projects.display();
 
@@ -185,7 +185,7 @@ education.display = function () {
         var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
         $("#education").append(formattedOnlineURL);
     }
-}
+};
 education.display();
 
 $("#mapDiv").append(googleMap);
